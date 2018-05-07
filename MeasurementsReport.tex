@@ -39,15 +39,13 @@ Johannesburg, South Africa \\
 \maketitle
 
 \begin{abstract}
-UUUUUUUUYYYYYYYAAAAAAANNNNNNNNDDDDDDDDDAAAAAAAAA
+A rain detection measurement system was designed and simulated. The system is meant to be able to detect the amount of moisture on the screen and to convey messages that are going to allow the vehicle to respond in the expected manner. The design of the measurement system is based on optics and infrared light. It is however discovered that the effect of light is an important aspect of the physical world.
 \end{abstract}
 
-\begin{IEEEkeywords}
 
-\end{IEEEkeywords}
 
 \section{Introduction}
-\IEEEPARstart{T}{he} purpose of this project is design and simulate a rain detection measurement system for an electric vehicle. The system is to be mounted under the rear view mirror and uses an infrared transmitter and receiver pair to determine the amount of water on the section of the windshield that is observable by the measurement system. It is a fair assumption that if the amount of water on any section of the windshield is representative of the amount of water on the whole windshield.  This measurement systems purpose is not only to display to the driver how much water is on the windshield and by extension how hard it is raining but also to be able to generate an input to the PWM system that controls the speed of the windshield wipers. The measurement system's design is based on the fundamental principles of measurement systems and the model given in Bentley \cite{BENT}. There are four main sections to this measurement system, namely the sensing stage, the signal conditioning stage, the signal processing stage and the data presentation stage. \\
+\IEEEPARstart{T}{he} purpose of this project is design and simulate a rain detection measurement system for an electric vehicle. The system is to be mounted under the rear view mirror and uses an infrared transmitter and receiver pair to determine the amount of water on the section of the windshield that is observable by the measurement system. It is a fair assumption that if the amount of water on any section of the windshield is representative of the amount of water on the whole windshield. This measurement systems purpose is not only to display to the driver how much water is on the windshield and by extension how hard it is raining but also to be able to generate an input to the PWM system that controls the speed of the windshield wipers. The measurement system's design is based on the fundamental principles of measurement systems and the model given in Bentley \cite{BENT}. There are four main sections to this measurement system, namely the sensing stage, the signal conditioning stage, the signal processing stage and the data presentation stage. \\
 
 
 The sensing stage involves the infrared transmitter and receiver pair. The signal conditioning stage includes the filter which acts as a noise removal filter as well as an anti-aliasing filter. The signal processing stage takes place within the ADC where voltages are related to different levels of rain and the corresponding outputs to the user and the windshield PWM are produced. The smartness of the system is in the ability to calibrate at will which can be used as a means of customising the speed at which the windshield wipers operate as different drivers may have different preferences as to how different levels of rain relate to to certain speeds. The value of this measurement system is that it reduces the number of distractions that occur during the driving process. Driving in the rain is dangerous and having to monitor and adjust the windshield wipers manually is an unnecessary distraction that will with the help of this measurement system be eliminated. Furthermore this report details the static and dynamic characteristics of the designed measurement system. Lastly the Strengths Weaknesses Advantages and Threats~(SWAT) of the measurement system are evaluated and the conclusion then summarises the key points from each section and analyses the successes and failures of this design. 
@@ -57,7 +55,7 @@ The sensing stage involves the infrared transmitter and receiver pair. The signa
 	
 	
 \subsection{Measurement Systems}
-UUUUUUUUYYYYYYYAAAAAAANNNNNNNNDDDDDDDDDAAAAAAAAA
+A general measurement system always has the following  resources, a sensing elelemnt, signal conditioing element, signal processing and data acquisition element. All these elements are expected to act accordingly to their assigned roles. 
 
 	
 \subsection{Literature Survey}
@@ -73,9 +71,8 @@ When light passes through a medium and meets a boundary, if the medium on the ot
 This measurement system takes advantage of this physical phenomenon by shotting infrared light into the windshield at an angle higher than the critical angle calculated to be $41.08 ^{\circ}$ given that the refractive index of air is $1.0003$ and using the average refractive index of windshield glass determined in \cite{RI} to be approximately $1.522$. When there is water on the glass the refractive index on the outside boundary changes from $1.0003$ to $1.333$ which changes the critical angle from $41.08 ^{\circ}$ to $61.14 ^{\circ}$. It is therefore decided that the infrared light be shot at the windshield at an angle of $45 ^{\circ}$ such that when there is no water the light will be totally internally refracted but when water is present the some of the light will be refracted and the received amount of light will be less than what was sent indicating the presence of water. This concept is clearly illustrated in the system block diagram in the Design section below. 
 
 	
-\subsection{Real World Challenges (Noise and Its Effects)}
-UUUUUUUUYYYYYYYAAAAAAANNNNNNNNDDDDDDDDDAAAAAAAAA
----------------------- NEEEEEEDS MORE -------------
+\subsection{Real World Challenges}
+One of the major challenges to the system is noise. Noise can be due to various factors such as thermal noise and the non-ideal characteristics of electronic components. This in turn implies that errors due to noise may be introduced, as a result, the system is required to be able to respond to these errors in order to handle the input and output to the system responsibly.
 \cite{NOISE}
 	
 \section{Design}
@@ -179,7 +176,7 @@ As stated in weaknesses the lack of logical checks when personalising the operat
 
 
 \section{Conclusion}
-UUUUUUUUYYYYYYYAAAAAAANNNNNNNNDDDDDDDDDAAAAAAAAA
+The designed and simulated  rain detection measurement system for an electrical vehicle is meant to be mounted on the windshield mirror. This measurement system is shown to reduce risks of accidents by limiting the possible distractions to a driver travelling in under rainy conditions. The measurement system's use of light in the detection is possible due to the system making use of the physical laws of refraction and reflection which in turn serve as an underlying concept of rain-detection. The analysis of the advantages and disadvantages of the system shows that while the system itself has not been fully realisable, the small amount of errors present in the subsystem are negligible.
 
 
 \begin{thebibliography}{22}
